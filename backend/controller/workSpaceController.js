@@ -56,6 +56,7 @@ const getWorkSpacesbyCity = asyncHandler(async (req, res) => {
 
     const coworkingSpaces = await CoworkingSpace.find({
       "location.city": city._id,
+      status: "approve",
     }).exec();
 
     res.json(coworkingSpaces);
