@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("API is running...");
+  res.send("API is running but not...");
 });
 
 app.listen(process.env.PORT, console.log("server started on 5000"));
